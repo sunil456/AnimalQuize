@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/animalQuizLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    tools:context="com.androidprojects.sunilsharma.animalquize.MainActivityFragment"
+    tools:showIn="@layout/activity_main"
+    android:orientation="vertical"
+    android:background="#000">
+
+
+    <LinearLayout
+        android:id="@+id/firstRowLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:lines="2"
+            android:layout_margin="5dp"/>
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:lines="2"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/secondRowLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:lines="2"
+            android:layout_margin="5dp"/>
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:lines="2"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/thirdRowLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:lines="2"
+            android:layout_margin="5dp"/>
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:lines="2"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textQuestionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_value"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#fff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/question_text"/>
+
+
+    <ImageView
+        android:id="@+id/imageAnimal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="@dimen/margin_value"
+        android:layout_marginLeft="@dimen/margin_left_value"
+        android:layout_marginRight="@dimen/margin_right_value"/>
+
+
+    <TextView
+        android:id="@+id/textAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:gravity="center_horizontal"
+        android:textStyle="italic"
+        android:textSize="@dimen/answer_font_size"/>
+
+
+
+</LinearLayout>
